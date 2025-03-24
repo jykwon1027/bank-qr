@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>계좌번호 복사</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: inline-block;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1em;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>💳 경남은행 계좌번호</h2>
+    <p id="account">2210086491002 (권재영, 하늘약국)</p>
+    <button onclick="copyText()">복사하기</button>
+  </div>
+
+  <script>
+    function copyText() {
+      const text = document.getElementById("account").innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        alert("계좌번호가 복사되었습니다!");
+      });
+    }
+  </script>
+</body>
+</html>
