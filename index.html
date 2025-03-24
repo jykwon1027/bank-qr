@@ -7,23 +7,27 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      padding: 40px;
+      padding: 20px;
       background-color: #f9f9f9;
       text-align: center;
     }
     .container {
       background-color: white;
-      padding: 30px;
+      padding: 40px;
       border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       display: inline-block;
+      max-width: 95vw;
     }
     h2 {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+      font-size: 1.4em;
     }
     p {
-      font-size: 1.2em;
+      font-size: 1.1em;
       margin-bottom: 20px;
+      line-height: 1.5;
+      word-break: keep-all;
     }
     button {
       padding: 10px 20px;
@@ -41,8 +45,8 @@
 </head>
 <body>
   <div class="container">
-    <h2>💳 경남은행 권재영(하늘약국)</h2>
-    <p id="account">221-0086-4910-02 </p>
+    <h2>💳 경남은행</h2>
+    <p id="account">권재영(하늘약국)<br>221-0086-4910-02</p>
     <button onclick="copyText()">복사하기</button>
   </div>
 
