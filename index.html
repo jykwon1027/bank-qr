@@ -13,23 +13,29 @@
     }
     .container {
       background-color: white;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 30px 20px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
       display: inline-block;
-      max-width: 95vw;
+      max-width: 90vw;
+      min-width: 280px;
     }
     .logo {
-      width: 100px;
+      width: 36px;
       margin-bottom: 10px;
     }
     h2 {
-      margin-bottom: 10px;
-      font-size: 1.4em;
+      font-size: 1.2em;
+      font-weight: bold;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
     }
     p {
-      font-size: 1.1em;
-      margin-bottom: 20px;
+      font-size: 1em;
+      margin: 10px 0 20px;
       line-height: 1.5;
       word-break: keep-all;
     }
@@ -39,7 +45,7 @@
       border: none;
       background-color: #4CAF50;
       color: white;
-      border-radius: 8px;
+      border-radius: 6px;
       cursor: pointer;
     }
     button:hover {
@@ -49,8 +55,7 @@
 </head>
 <body>
   <div class="container">
-    <img src="경남은행.png" alt="경남은행 로고" class="logo">
-    <h2>경남은행</h2>
+    <h2><img src="경남은행.png" alt="경남은행 로고" class="logo">경남은행</h2>
     <p id="account">권재영(하늘약국)<br>221-0086-4910-02</p>
     <button onclick="copyText()">복사하기</button>
   </div>
